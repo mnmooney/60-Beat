@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="izm-Ts-Bdi">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="C2W-KJ-MHO">
+            <objects>
+                <controller id="izm-Ts-Bdi" customClass="InterfaceController" customModule="_0_Beat_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="26" alignment="left" text="ANSWER QUESTIONS" textAlignment="center" id="lDU-mj-mOs">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                            <variation key="device=watch38mm" width="136"/>
+                            <variation key="device=watch42mm" height="34" width="156">
+                                <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                            </variation>
+                        </label>
+                        <imageView width="80" height="28" alignment="center" image="Logo.png" id="vEF-7c-4VB">
+                            <variation key="device=watch38mm" height="37" width="122"/>
+                            <variation key="device=watch42mm" height="33" width="102"/>
+                        </imageView>
+                        <label width="136" height="35" alignment="left" text="IN 60 HEART BEATS" textAlignment="center" id="R0m-Tm-D2J">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                            <variation key="device=watch38mm" height="28" width="136"/>
+                            <variation key="device=watch42mm" height="35" width="156">
+                                <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                            </variation>
+                        </label>
+                        <button width="1" alignment="left" title="Start" id="VoC-Sy-soe">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.98039215686274506" green="0.0" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="20"/>
+                            <variation key="device=watch42mm">
+                                <fontDescription key="font" type="boldSystem" pointSize="25"/>
+                            </variation>
+                            <connections>
+                                <action selector="NewGame" destination="izm-Ts-Bdi" id="NjY-SI-CCc"/>
+                            </connections>
+                        </button>
+                        <group height="86" alignment="left" id="uME-jx-1ny">
+                            <items>
+                                <imageView width="90" height="90" alignment="center" verticalAlignment="center" id="llh-jk-Hrg"/>
+                                <label width="19.5" height="98" alignment="left" id="Cct-HG-Pwp">
+                                    <variation key="device=watch42mm" height="134" width="28.5"/>
+                                </label>
+                                <label width="1" height="100" alignment="left" text="Which player seeded in the top 32 at Wimbledon in 2009" textAlignment="center" numberOfLines="6" id="1q6-XJ-2Ap">
+                                    <color key="textColor" red="0.98039215690000003" green="0.0" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="14"/>
+                                    </variation>
+                                    <variation key="device=watch42mm" height="118"/>
+                                </label>
+                            </items>
+                            <variation key="device=watch38mm" height="88"/>
+                            <variation key="device=watch42mm" height="114"/>
+                        </group>
+                        <separator width="90" alignment="center" id="9eH-Ow-y3s">
+                            <color key="color" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" width="105"/>
+                        </separator>
+                        <button width="136" height="40" alignment="left" title="In another Country" id="aaP-e1-dqD">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.0" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                            <variation key="device=watch38mm" width="136">
+                                <fontDescription key="font" type="system" pointSize="14"/>
+                            </variation>
+                            <variation key="device=watch42mm" width="156"/>
+                            <connections>
+                                <action selector="AnswerOne" destination="izm-Ts-Bdi" id="3Zo-hV-qAl"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="42" alignment="left" title="Valves" id="ulJ-le-TTD">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.0" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                            <variation key="device=watch38mm">
+                                <fontDescription key="font" type="system" pointSize="14"/>
+                            </variation>
+                            <variation key="device=watch42mm" height="40"/>
+                            <connections>
+                                <action selector="AnswerTwo" destination="izm-Ts-Bdi" id="287-Br-nYG"/>
+                            </connections>
+                        </button>
+                        <label width="136" alignment="left" text="Pts: 000" textAlignment="center" id="mLI-kd-mL4">
+                            <color key="textColor" red="0.98039215690000003" green="0.0" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                        <imageView width="50" height="50" alignment="center" image="Thumb.png" id="Gqp-Fb-Kxw"/>
+                        <label width="136" height="44" alignment="left" text="You answered 000 questions and got" textAlignment="center" numberOfLines="2" id="iYU-AI-wwE">
+                            <color key="textColor" red="0.98039215690000003" green="0.0" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                            <variation key="device=watch38mm" height="43.5" width="136"/>
+                            <variation key="device=watch42mm" height="52" width="156">
+                                <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
+                            </variation>
+                        </label>
+                        <label width="136" height="50" alignment="left" text="000 right!" textAlignment="center" id="OBX-cG-twV">
+                            <fontDescription key="font" type="boldSystem" pointSize="29"/>
+                            <variation key="device=watch38mm" height="67.5" width="136"/>
+                            <variation key="device=watch42mm" height="60" width="156">
+                                <fontDescription key="font" type="boldSystem" pointSize="33"/>
+                            </variation>
+                        </label>
+                        <label width="136" height="39.5" alignment="left" text="You have been caught!!" textAlignment="center" numberOfLines="2" id="6lO-fA-CoA">
+                            <color key="textColor" red="0.98039215690000003" green="0.0" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                        <label width="136" height="60.5" alignment="left" text="Stop cheating and play the game properly!!! " textAlignment="center" numberOfLines="5" id="i0Z-fn-vMn">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                        <button width="1" alignment="left" title="Replay" id="u0A-RS-PWu">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.0" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="20"/>
+                            <variation key="device=watch42mm">
+                                <fontDescription key="font" type="boldSystem" pointSize="25"/>
+                            </variation>
+                            <connections>
+                                <action selector="ReplayGame" destination="izm-Ts-Bdi" id="JW1-4U-eYi"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="Answer1" destination="aaP-e1-dqD" id="28t-Gq-qgF"/>
+                        <outlet property="Answer2" destination="ulJ-le-TTD" id="C5f-kZ-ilr"/>
+                        <outlet property="CheatingLblOne" destination="6lO-fA-CoA" id="IU3-lF-3SO"/>
+                        <outlet property="CheatingLblTwo" destination="i0Z-fn-vMn" id="Vol-WJ-sLV"/>
+                        <outlet property="FinalImage" destination="Gqp-Fb-Kxw" id="fKJ-LU-qDl"/>
+                        <outlet property="FinalScore" destination="OBX-cG-twV" id="39k-wd-Hfo"/>
+                        <outlet property="FinalScoreLabel" destination="iYU-AI-wwE" id="tTr-sm-qRo"/>
+                        <outlet property="Group" destination="uME-jx-1ny" id="4cM-Ei-HJ2"/>
+                        <outlet property="HighestLabel" destination="lDU-mj-mOs" id="ZBu-XI-wic"/>
+                        <outlet property="Logo" destination="vEF-7c-4VB" id="kC5-Wa-WN7"/>
+                        <outlet property="LowestLabel" destination="R0m-Tm-D2J" id="LNq-88-f9D"/>
+                        <outlet property="Play" destination="VoC-Sy-soe" id="N90-ar-3iO"/>
+                        <outlet property="PointsLabel" destination="mLI-kd-mL4" id="4YU-30-7Hg"/>
+                        <outlet property="Question" destination="1q6-XJ-2Ap" id="aud-uP-SfQ"/>
+                        <outlet property="QuestionImage" destination="llh-jk-Hrg" id="PGA-Fz-dRL"/>
+                        <outlet property="Replay" destination="u0A-RS-PWu" id="Adj-RH-mzB"/>
+                        <outlet property="SepLabel" destination="Cct-HG-Pwp" id="gKJ-Qo-s7E"/>
+                        <outlet property="Seperator" destination="9eH-Ow-y3s" id="XYh-dN-iQ6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="131.64102564102566" y="23.974358974358974"/>
+        </scene>
+    </scenes>
+</document>

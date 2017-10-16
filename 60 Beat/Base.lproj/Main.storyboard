@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0_Beat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pulse Line.png" translatesAutoresizingMaskIntoConstraints="NO" id="F1W-zH-NGk">
+                                <rect key="frame" x="-200" y="-200" width="1000" height="1000"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="kzg-J5-ckO"/>
+                                    <constraint firstAttribute="height" constant="200" id="wlo-k3-yQG"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kzg-J5-ckO"/>
+                                        <exclude reference="wlo-k3-yQG"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This game is designed for the apple watch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Eo-hp-10v">
+                                <rect key="frame" x="155" y="-316" width="290" height="1232"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="NWd-AS-vsH"/>
+                                    <constraint firstAttribute="height" constant="88" id="wKY-72-sNX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NWd-AS-vsH"/>
+                                        <exclude reference="wKY-72-sNX"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Eo-hp-10v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3zF-ka-J32"/>
+                            <constraint firstItem="1Eo-hp-10v" firstAttribute="top" secondItem="F1W-zH-NGk" secondAttribute="top" id="8mF-uT-yBH"/>
+                            <constraint firstItem="1Eo-hp-10v" firstAttribute="centerY" secondItem="F1W-zH-NGk" secondAttribute="centerY" id="Inx-wR-QPd"/>
+                            <constraint firstItem="F1W-zH-NGk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MKi-y8-sTH"/>
+                            <constraint firstItem="1Eo-hp-10v" firstAttribute="trailing" secondItem="F1W-zH-NGk" secondAttribute="trailing" id="SRl-WM-K7N"/>
+                            <constraint firstItem="1Eo-hp-10v" firstAttribute="leading" secondItem="F1W-zH-NGk" secondAttribute="leading" id="alj-Hs-Eh1"/>
+                            <constraint firstItem="1Eo-hp-10v" firstAttribute="bottom" secondItem="F1W-zH-NGk" secondAttribute="bottom" constant="116" id="cGn-Yw-iY3"/>
+                            <constraint firstItem="F1W-zH-NGk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l4J-Rd-ojU"/>
+                            <constraint firstItem="1Eo-hp-10v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vYI-Ly-Suc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8mF-uT-yBH"/>
+                                <exclude reference="Inx-wR-QPd"/>
+                                <exclude reference="SRl-WM-K7N"/>
+                                <exclude reference="alj-Hs-Eh1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pulse Line.png" width="1000" height="1000"/>
+    </resources>
+    <color key="tintColor" red="0.98039215690000003" green="0.0" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+</document>
